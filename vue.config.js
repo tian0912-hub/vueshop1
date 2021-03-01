@@ -1,4 +1,6 @@
 module.exports = {
+  publicPath: './', // 基本路径
+  outputDir: 'docs', // 输出文件目录
   chainWebpack: config => {
     // 发布模式
     config.when(process.env.NODE_ENV === 'production', config => {
